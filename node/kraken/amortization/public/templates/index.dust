@@ -1,0 +1,23 @@
+{>"layouts/master" /}
+
+{<title}
+	Loan Application
+{/title}
+
+{<body}
+    <main role="main">
+        <div class="loanamount">
+            <fieldset>
+                <legend>{@pre type="content" key="greeting"/}</legend>
+                <form method="POST" action="/loan">
+                    <input name="amount" placeholder="{@pre type="content" key="loanAmount"/}"><br>
+                    <input name="interestRate" placeholder="{@pre type="content" key="interestRate"/}"><br>
+                    <input name="term" placeholder="{@pre type="content" key="term"/}"><br>
+                    <input type="hidden" name="_csrf" value="{_csrf}">
+                    <input type="submit" value="Amortization Schedule">
+                </form>
+            </fieldset>
+        </div>
+    </main>
+{/body}
+

@@ -1,0 +1,10 @@
+{>"layouts/master" /}
+
+{<title}
+	Bad Input
+{/title}
+
+{<body}
+    <h1>Invalid input for field {field}</h1>
+    <p>{message}</p>
+{/body}

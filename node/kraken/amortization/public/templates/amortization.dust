@@ -1,0 +1,33 @@
+{>"layouts/master" /}
+
+{<title}
+	Amortization
+{/title}
+
+{<body}
+    <main role="main">
+        <div class="amortization">
+            <table>
+                <tr>
+                    <th>PaymentNumber</th>
+                    <th>PaymentAmount</th>
+                    <th>PaymentInterest</th>
+                    <th>CurrentBalance</th>
+                    <th>TotalPayments</th>
+                    <th>TotalInterestPaid</th>
+                </tr>
+                {#payments}
+                    <tr>
+                        <td>{number}</td>
+                        <td>{amount}</td>
+                        <td>{interest}</td>
+                        <td>{currentBalance}</td>
+                        <td>{totalPayments}</td>
+                        <td>{totalInterestPaid}</td>
+                    </tr>
+                {/payments}
+            </table>
+        </div>
+    </main>
+{/body}
+
